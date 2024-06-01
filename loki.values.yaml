@@ -21,9 +21,6 @@ loki:
       s3: "http://minioadmin:minioadmin@loki.minio-dev.svc.cluster.local.:9000"
       s3forcepathstyle: true
       bucketnames: "loki"
-      #region: "eu-north-1"
-      # access_key_id: E8XW66gYMagRe2QHssnt
-      # secret_access_key: VBj4HtFs8sVY5Utwamyh0lOsV7MSSZzGA2MU0YXT
 singleBinary:
   replicas: 1
 read:
