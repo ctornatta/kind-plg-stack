@@ -1,0 +1,18 @@
+apiVersion: networking.istio.io/v1
+kind: VirtualService
+metadata:
+  name: grafana
+spec:
+  gateways:
+  - default/bookinfo-gateway
+  hosts:
+  - grafana.localdomain
+  http:
+  - match:
+    - uri:
+        prefix: /
+    route:
+    - destination:
+        host: grafana
+        port:
+          number: 80
